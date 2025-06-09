@@ -22,7 +22,7 @@ if st.button("what's my age"):
     age=relativedelta(current_date,dob)
     st.success(f"{name} your age is {age.years} years {age.months} month and {age.days} days")
 years=age.years
-if age<18:
+if years<18:
     st.markdown("# oo you are under 18")
 else:
     st.markdown("** Oo means you are a adult**")
